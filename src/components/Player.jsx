@@ -3,6 +3,7 @@ import React from 'react';
 type PlayerState = {
     name: string;
     balance: number;
+    cards: object[];
 }
 
 class Player extends React.Component<{}, PlayerState> {
@@ -11,17 +12,12 @@ class Player extends React.Component<{}, PlayerState> {
         super(props);
         this.state = { 
             name: "", 
-            balance: 100
+            balance: 100,
+            cards: []
         };
     }
 
 }
-
-
-
-
-
-
 
 
 
