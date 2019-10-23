@@ -4,6 +4,9 @@ type PlayerState = {
     name: string;
     balance: number;
     cards: object[];
+    status: string;
+    score: number[];
+    cardsScored: number[];
 }
 
 class Player extends React.Component<{}, PlayerState> {
@@ -13,7 +16,10 @@ class Player extends React.Component<{}, PlayerState> {
         this.state = { 
             name: "", 
             balance: 100,
-            cards: []
+            cards: [],
+            status: "",
+            score: [],
+            cardsScored: [],
         };
     }
 

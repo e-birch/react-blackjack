@@ -25,7 +25,6 @@ function createDeck(){
             newArray.push(<Card
                             suit={suits[i]}
                             value={values[j]}
-                            picture={(j>10)}
             />)
             cardsArray = newArray;
         }
